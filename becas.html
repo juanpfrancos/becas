@@ -132,20 +132,23 @@
     }
     
     .contbutton{
-                   text-decoration: none;
-                   padding: 10px;
-                   font-weight: 600;
-                   font-size: 18px;
-                   color: #ffffff;
-                   background-color:#d80f39;
-                   border-radius: 6px;
-                   -webkit-box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.69);
-                   -moz-box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.69);
-                   box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.69);
-                }
-                 .btext{
-                    color: white;
-                 }
+      text-decoration: none;
+      padding: 10px;
+      font-weight: 600;
+      font-size: 18px;
+      color: #ffffff;
+      background-color:#d80f39;
+      border-radius: 6px;
+      -webkit-box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.69);
+      -moz-box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.69);
+      box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.69);
+    }
+    .btext{
+      color: white;
+    }
+    #becas1,#flecha{
+      display: inline-block;
+    }
     </style>
     
     
@@ -230,6 +233,11 @@
     
       <!-- div carolina -->
       <div class="carolina" id="carolina1">
+        <div id="flecha">
+          <a href="http://" style="font-weight: bold; text-decoration: none; font-size:2em" onclick="volverCarolina()">
+          🡠
+          </a>
+        </div>
         <div class="imagenCarolina">
           <img class="imgCarolina" src="fundacion_carolina.svg" alt="" />
         </div>
@@ -334,6 +342,11 @@
     
       <!-- div eacid -->
       <div class="eacid" id="eacid1">
+        <div id="flecha">
+          <a href="http://" style="font-weight: bold; text-decoration: none; font-size:2em" onclick="volverAecid()">
+          🡠
+          </a>
+        </div>
         <div class="imagenAecid">
           <img class="imgAecid" src="aecid.svg" alt="" />
         </div>
@@ -394,5 +407,18 @@
         var x = document.getElementById("eacid1");
         x.style.display = "block";
       }
-    </script>
+      function volverCarolina() {
+        var x = document.getElementById("becas1");
+        x.style.display = "block";
     
+        var x = document.getElementById("carolina1");
+        x.style.display = "none";
+      }
+      function volverAecid() {
+        var x = document.getElementById("becas1");
+        x.style.display = "block";
+    
+        var x = document.getElementById("eacid1");
+        x.style.display = "none";
+      }
+    </script>
