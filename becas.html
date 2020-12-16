@@ -1,6 +1,8 @@
 
 <style>
-
+    #breadcrumb{
+      visibility:hidden;
+    }
     .principal span{
       font-family: Arial, Helvetica, sans-serif;
       font-size: 16px;
@@ -55,7 +57,7 @@
       justify-content: center;
     }
     
-    p {
+    .parraf {
       text-align: justify;
     }
     
@@ -242,7 +244,7 @@
           <img class="imgCarolina" src="fundacion_carolina.svg" alt="" />
         </div>
     
-        <p style="margin-left: 40px">
+        <p style="margin-left: 40px" class="parraf">
           <span class="pcolor">Fundación Carolina:</span> Las becas son distribuidas
           en las siguientes cuatro modalidades:
         </p>
@@ -289,7 +291,7 @@
           </li>
         </ul>
     
-        <p style="margin-left: 40px">
+        <p style="margin-left: 40px" class="parraf">
           Por parte de la <span class="pcolor"> Fundación Carolina </span>
         </p>
     
@@ -334,7 +336,7 @@
         </ul>
     
         <div style="text-align: center; margin-bottom: 1em;">
-          <a class="contbutton" href="http://">
+          <a class="contbutton">
             Becas Fundación Carolina 🡢
             </a>
         </div>
@@ -350,7 +352,7 @@
         <div class="imagenAecid">
           <img class="imgAecid" src="aecid.svg" alt="" />
         </div>
-        <p style="margin-left: 25px">
+        <p style="margin-left: 25px" class="parraf">
           Por parte de la
           <span class="pcolor">AECID</span>
           sus convocatorias están dirigidas principalmente a:
@@ -374,51 +376,20 @@
           </li>
         </ul>
     
-        <p style="margin-left: 25px">
+        <p style="margin-left: 25px" class="parraf">
           La AECID tiene diferentes programas de capacitación de jóvenes españoles
           además de iniciativas para la creación artística.
         </p>
     
-        <p style="margin-left: 25px">
+        <p style="margin-left: 25px" class="parraf">
           Su portal : Fundación Carolina: <span style="color: #d80f39; border-bottom: 1px solid;">gestión.fundacioncarolina.es/programas</span> 
         </p>
         
         <div style="text-align: center; margin-bottom: 1em;">
-          <a class="contbutton" href="http://">
+          <a class="contbutton">
             Becas de la AECID 🡢
           </a>
         </div>
       </div>
     </div>
-    
-    <script>
-      function visitarCarolina() {
-        var x = document.getElementById("becas1");
-        x.style.display = "none";
-    
-        var x = document.getElementById("carolina1");
-        x.style.display = "block";
-      }
-    
-      function visitaraecid() {
-        var x = document.getElementById("becas1");
-        x.style.display = "none";
-    
-        var x = document.getElementById("eacid1");
-        x.style.display = "block";
-      }
-      function volverCarolina() {
-        var x = document.getElementById("carolina1");
-        x.style.display = "none";
-
-        var x = document.getElementById("becas1");
-        x.style.display = "block";
-      }
-      function volverAecid() {
-        var x = document.getElementById("eacid1");
-        x.style.display = "none";
-
-        var x = document.getElementById("becas1");
-        x.style.display = "block";
-      }
-    </script>
+    <script src="http://207.154.255.205/sites/default/files/js/interact.js"></script>
